@@ -22,8 +22,9 @@ constructor(private vetementService: VetementService,private router :Router) {}
     this.vetementService.ajouterVetement(this.newVetement)
     .subscribe(prod => {
     console.log(prod);
-    });
     this.router.navigate(['vetement']);
+    });
+    
     }
   /*addAnimal(){
    // console.log(this.newAnimal);

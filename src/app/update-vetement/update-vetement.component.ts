@@ -24,11 +24,9 @@ constructor(private activatedRoute: ActivatedRoute,
   updateVetement()
 { //console.log(this.currentProduit);
   this.vetementService.updateVetement(this.currentVetement).subscribe(prod => {
-    this.router.navigate(['vetements']);
+    this.router.navigate(['vetement']);
     },(error) => { alert("Problème lors de la modification !"); }
     );
     
 }
-
-
 }
